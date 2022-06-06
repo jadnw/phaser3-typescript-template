@@ -5,11 +5,19 @@ const config: Types.Core.GameConfig = {
   type: AUTO,
   parent: 'game',
   backgroundColor: '#33A5E7',
+  physics: {
+    default: 'arcade',
+    arcade: { gravity: { y: 0 }},
+  },
   scale: {
     mode: Scale.ScaleModes.ENVELOP,
-    width: 1920,
-    height: 1080,
+    width: 1280,
+    height: 720,
     autoCenter: Scale.CENTER_BOTH,
+  },
+  render: {
+    pixelArt: true,
+    antialiasGL: false,
   },
 }
 
